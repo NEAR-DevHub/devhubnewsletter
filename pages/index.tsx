@@ -196,12 +196,12 @@ export default function Home() {
 
             
             <div id="mc_embed_signup">
-            <h2>NEAR Devhub newsletter</h2>
+            <h2>NEAR DevHub newsletter</h2>
             <p id="copy">Stay in the loop. Get the latest updates, announcements, opportunities, and insights from the ecosystem in your inbox</p>
               <form action="https://neardevhub.us21.list-manage.com/subscribe/post?u=24aee19c18def43a73854f24d&amp;id=c38bf6663b&amp;f_id=0046e1e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
                 <div id="mc_embed_signup_scroll">
                   <div class="mc-field-group">
-                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="type you email...">
+                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="type your email...">
                     <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
                   </div>
                   <div hidden=""><input type="hidden" name="tags" value="2963845"></div>
