@@ -113,13 +113,13 @@ export default function Home() {
             #mc_embed_signup .mc-field-group {
               margin-bottom: 20px;
               display: flex; /* Added */
-              justify-content: center; /* Added */
+              justify-content: left; /* Added */
               
               @media screen and (max-width: 480px) {
               display: flex; /* Added */
               flex-direction:column;
-              justify-content: center; /* Added */
-              align-items:center;
+              justify-content: left; /* Added */
+              align-items:left;
               }
             
             }
@@ -239,7 +239,7 @@ export default function Home() {
             
             <div id="mc_embed_signup">
             <h2>NEAR DevHub newsletter</h2>
-            <p id="copy">Stay in the loop. Get the latest updates, announcements, opportunities, and insights from the ecosystem in your inbox</p>
+            <p id="copy">Stay in the loop. Get the latest updates, announcements,<br /> opportunities, and insights from the developer ecosystem<br />in your inbox</p>
               <form action="https://one.us21.list-manage.com/subscribe/post?u=24aee19c18def43a73854f24d&amp;id=c5e9e2df3c&amp;f_id=00d3fbe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
         <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
