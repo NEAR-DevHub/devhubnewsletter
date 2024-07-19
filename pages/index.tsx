@@ -137,6 +137,48 @@ export default function Home() {
                 padding: 0 5px;
                 }
             }
+             #mce-FNAME {
+              height: 38px;
+              width: 300px;
+              border: 1.5px solid #ECECEC;
+              padding: 0 5px;
+              border-right: none;
+
+              @media screen and (max-width: 480px) {
+                height: 38px;
+                //width: 200px;
+                border: 1.5px solid #ECECEC;
+                padding: 0 5px;
+                }
+            }
+             #mce-GITHUB {
+              height: 38px;
+              width: 300px;
+              border: 1.5px solid #ECECEC;
+              padding: 0 5px;
+              border-right: none;
+
+              @media screen and (max-width: 480px) {
+                height: 38px;
+                //width: 200px;
+                border: 1.5px solid #ECECEC;
+                padding: 0 5px;
+                }
+            }
+             #mce-NEARWALLET {
+              height: 38px;
+              width: 300px;
+              border: 1.5px solid #ECECEC;
+              padding: 0 5px;
+              border-right: none;
+
+              @media screen and (max-width: 480px) {
+                height: 38px;
+                //width: 200px;
+                border: 1.5px solid #ECECEC;
+                padding: 0 5px;
+                }
+            }
             #mc-embedded-subscribe {
               background-color: #00EC97;
               color: #000000;
@@ -207,7 +249,7 @@ export default function Home() {
             <div class="response" id="mce-success-response" style="display: none;"></div>
         </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_24aee19c18def43a73854f24d_c5e9e2df3c" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
     </div>
-</form>
+</form><script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[5]='GITHUB';ftypes[5]='text';fnames[6]='NEARWALLET';ftypes[6]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
             </div>
           </div>
           `}
