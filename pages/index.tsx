@@ -198,23 +198,16 @@ export default function Home() {
             <div id="mc_embed_signup">
             <h2>NEAR DevHub newsletter</h2>
             <p id="copy">Stay in the loop. Get the latest updates, announcements, opportunities, and insights from the ecosystem in your inbox</p>
-              <form action="https://neardevhub.us21.list-manage.com/subscribe/post?u=24aee19c18def43a73854f24d&amp;id=c38bf6663b&amp;f_id=0046e1e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
-                <div id="mc_embed_signup_scroll">
-                  <div class="mc-field-group">
-                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="type your email...">
-                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                  </div>
-                  <div hidden=""><input type="hidden" name="tags" value="2963845"></div>
-                  <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display: none;"></div>
-                    <div class="response" id="mce-success-response" style="display: none;"></div>
-                  </div>
-                  <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_24aee19c18def43a73854f24d_c38bf6663b" tabindex="-1" value=""></div>
-                  <div class="clear">
-                    
-                  </div>
-                </div>
-              </form>
+              <form action="https://one.us21.list-manage.com/subscribe/post?u=24aee19c18def43a73854f24d&amp;id=c5e9e2df3c&amp;f_id=00d3fbe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+        <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div><div class="mc-field-group"><label for="mce-GITHUB">Github Username </label><input type="text" name="GITHUB" class=" text" id="mce-GITHUB" value=""></div><div class="mc-field-group"><label for="mce-NEARWALLET">NEAR Wallet Address </label><input type="text" name="NEARWALLET" class=" text" id="mce-NEARWALLET" value=""></div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display: none;"></div>
+            <div class="response" id="mce-success-response" style="display: none;"></div>
+        </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_24aee19c18def43a73854f24d_c5e9e2df3c" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
+    </div>
+</form>
             </div>
           </div>
           `}
