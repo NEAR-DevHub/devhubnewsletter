@@ -97,108 +97,53 @@ export default function Home() {
               object-position: top; /* This will align the image to the top */
             }
             
-            #mc_embed_signup {
-              margin-top: 20px;
-              clear: left; 
-              width: 600px;
-              padding: 20px;
-              border-radius: 10px;
-              text-align: center;
-            }
-            #mc_embed_signup h2 {
-              font-size: 24px;
-              
-              margin-bottom: 20px;
-            }
-            #mc_embed_signup .mc-field-group {
-              margin-bottom: 20px;
-              display: flex; /* Added */
-              justify-content: left; /* Added */
-              
-              @media screen and (max-width: 480px) {
-              display: flex; /* Added */
-              flex-direction:column;
-              justify-content: left; /* Added */
-              align-items:left;
-              }
-            
-            }
-            #mce-EMAIL {
-              height: 38px;
-              width: 300px;
-              border: 1.5px solid #ECECEC;
-              padding: 0 5px;
-              border-right: none;
+#mc_embed_signup .mc-field-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-              @media screen and (max-width: 480px) {
-                height: 38px;
-                //width: 200px;
-                border: 1.5px solid #ECECEC;
-                padding: 0 5px;
-                }
-            }
-             #mce-FNAME {
-              height: 38px;
-              width: 300px;
-              border: 1.5px solid #ECECEC;
-              padding: 0 5px;
-              border-right: none;
+#mc_embed_signup .mc-field-group label {
+  margin-bottom: 5px;
+}
 
-              @media screen and (max-width: 480px) {
-                height: 38px;
-                //width: 200px;
-                border: 1.5px solid #ECECEC;
-                padding: 0 5px;
-                }
-            }
-             #mce-GITHUB {
-              height: 38px;
-              width: 300px;
-              border: 1.5px solid #ECECEC;
-              padding: 0 5px;
-              border-right: none;
+#mce-EMAIL,
+#mce-FNAME,
+#mce-GITHUB,
+#mce-NEARWALLET {
+  height: 38px;
+  width: 100%;
+  max-width: 300px;
+  border: 1.5px solid #ECECEC;
+  padding: 0 5px;
+}
 
-              @media screen and (max-width: 480px) {
-                height: 38px;
-                //width: 200px;
-                border: 1.5px solid #ECECEC;
-                padding: 0 5px;
-                }
-            }
-             #mce-NEARWALLET {
-              height: 38px;
-              width: 300px;
-              border: 1.5px solid #ECECEC;
-              padding: 0 5px;
-              border-right: none;
+@media screen and (max-width: 480px) {
+  #mce-EMAIL,
+  #mce-FNAME,
+  #mce-GITHUB,
+  #mce-NEARWALLET {
+    width: 100%;
+  }
+}
 
-              @media screen and (max-width: 480px) {
-                height: 38px;
-                //width: 200px;
-                border: 1.5px solid #ECECEC;
-                padding: 0 5px;
-                }
-            }
-            #mc-embedded-subscribe {
-              background-color: #00EC97;
-              color: #000000;
-              padding: 10px 20px;
-              cursor: pointer;
-              transition: background-color 0.3s, color 0.3s;
-              border: none; /* Add this line to remove the border */
-              
-              @media screen and (max-width: 480px) {
-                margin-top: 10px;
-                height: 38px;
-                width: 200px;
-                border: 1.5px solid #ECECEC;
-                padding: 0 5px;
-                }
-            }
-            #mc-embedded-subscribe:hover {
-              background-color: #000000;
-              color: #FFFFFF;
-            }
+#mc-embedded-subscribe {
+  margin-top: 10px;
+  height: 38px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #00EC97;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#mc-embedded-subscribe:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
              #copy {
               font-size: 16px; /* Default font size for large screens */
               padding: 10px 0;
