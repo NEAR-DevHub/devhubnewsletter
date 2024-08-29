@@ -119,6 +119,16 @@ export default function Home() {
   padding: 0 5px;
 }
 
+#success-message {
+                display: none;
+                background-color: #00EC97;
+                color: #000000;
+                padding: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+              }
+
 @media screen and (max-width: 480px) {
   #mce-EMAIL,
   #mce-FNAME,
@@ -175,15 +185,7 @@ export default function Home() {
     }
   }
 
-#success-message {
-                display: none;
-                background-color: #00EC97;
-                color: #000000;
-                padding: 10px;
-                margin-top: 20px;
-                border-radius: 5px;
-                text-align: center;
-              }
+
             </style>
             <div id="header">${logoHtml}</div>
             <div id="banner-container">
