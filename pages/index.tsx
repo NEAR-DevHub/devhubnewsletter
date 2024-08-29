@@ -175,6 +175,15 @@ export default function Home() {
     }
   }
 
+#success-message {
+                display: none;
+                background-color: #00EC97;
+                color: #000000;
+                padding: 10px;
+                margin-top: 20px;
+                border-radius: 5px;
+                text-align: center;
+              }
             </style>
             <div id="header">${logoHtml}</div>
             <div id="banner-container">
@@ -193,10 +202,46 @@ export default function Home() {
             <div class="response" id="mce-error-response" style="display: none;"></div>
             <div class="response" id="mce-success-response" style="display: none;"></div>
         </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_24aee19c18def43a73854f24d_c5e9e2df3c" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
+    <div id="success-message">Thank you for subscribing to our newsletter!</div>
     </div>
 </form><script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[5]='GITHUB';ftypes[5]='text';fnames[6]='NEARWALLET';ftypes[6]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
             </div>
           </div>
+          <script type="text/javascript">
+            (function($) {
+              window.fnames = new Array(); 
+              window.ftypes = new Array();
+              fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[5]='GITHUB';ftypes[5]='text';fnames[6]='NEARWALLET';ftypes[6]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';
+              
+              // Add event listener for form submission
+              document.getElementById('mc-embedded-subscribe-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                var form = this;
+                var url = form.action.replace('/post?', '/post-json?');
+                var data = '';
+                var inputs = form.querySelectorAll('input');
+                inputs.forEach(function(input) {
+                  data += '&' + input.name + '=' + encodeURIComponent(input.value);
+                });
+                
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', url + data);
+                xhr.onload = function() {
+                  if (xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.result === 'success') {
+                      document.getElementById('success-message').style.display = 'block';
+                      form.style.display = 'none';
+                    } else {
+                      // Handle error
+                      console.error('Subscription failed:', response.msg);
+                    }
+                  }
+                };
+                xhr.send();
+              });
+            })(jQuery);
+          </script>
           `}
       />
     </div>
